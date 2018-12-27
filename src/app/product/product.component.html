@@ -1,0 +1,15 @@
+<p>
+    product works!
+  </p>
+  <table class="table table-dark table-striped" *ngIf="newproducts;">
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>price</th>
+      </tr>
+      <tr *ngFor="let m of newproducts;">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.price}}</td>
+      </tr>
+  </table>

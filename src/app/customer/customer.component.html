@@ -1,0 +1,13 @@
+<p>
+  customer works!
+</p>
+<input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox">
+<p></p>
+<table class="table table-dark table-striped" *ngFor="let emp of customerData | grdFilter: {name: searchText, Age:searchText,  blog: searchText}; let i=index;">
+  <tr>
+    <td style="width: 5%;">{{i +1}}</td>
+    <td style="width: 10%;">{{emp.name}}</td>
+    <td style="width: 5%;">{{emp.Age}}</td>
+    <td style="width: 15%;">{{emp.blog}}</td>
+  </tr>
+</table>

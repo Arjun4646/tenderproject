@@ -1,0 +1,15 @@
+<input type="text"  [(ngModel)]="firstname" (input)="Search()"/>
+
+<table class="table">
+  <tr>
+<th>ID</th>
+<th>first name</th>
+<th>Last name</th>
+  </tr>
+  <tr *ngFor="let o of empolyess" >
+<td>{{o.ID}}</td>
+<td>{{o.firstName}}</td>
+<td>{{o.lastName}}</td>
+</tr>
+
+</table>
